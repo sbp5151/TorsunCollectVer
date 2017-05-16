@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color = "@color/btn_backgroud_color" android:state_enabled="false"/>
+    <item android:color = "@color/backgroud_red" android:state_enabled="true"/>
+    <item android:color = "@color/viewfinder_laser" android:state_pressed="true"/>
+</selector>

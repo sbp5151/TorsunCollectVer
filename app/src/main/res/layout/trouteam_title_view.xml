@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_team_title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_red">
+
+    <View
+        android:id="@+id/trouteam_title_cent_flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/title_image_title_back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/trouteam_title_cent_flag"
+        android:layout_marginTop="36dp"
+        android:layout_weight="1.4"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/back" />
+    <!--android:layout_marginTop="@dimen/top_title_tv_height"-->
+    <!--android:layout_marginTop="@dimen/top_title_back_height"-->
+
+    <TextView
+        android:id="@+id/tv_title_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/trouteam_title_cent_flag"
+        android:layout_weight="7"
+
+        android:ellipsize="marquee"
+        android:layout_marginTop="36dp"
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="@string/feed_back"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_bar_size" />
+
+    <TextView
+        android:id="@+id/tv_title_sure"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/trouteam_title_cent_flag"
+        android:layout_weight="1.7"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:layout_marginTop="35dp"
+
+        android:text="@string/sure"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18" />
+
+</LinearLayout>

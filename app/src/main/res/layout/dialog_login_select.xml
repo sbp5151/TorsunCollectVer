@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true" >
+
+    <LinearLayout
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="@dimen/dialog_height"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="24dip"
+        android:layout_marginTop="24dip"
+        android:background="@drawable/shape_dialog_white_bg"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_select_dialog_title"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="@dimen/dialog_title_padding_top"
+            android:text="@string/mainFragment_logoff_title"
+            android:textColor="@color/hint_title"
+            android:textSize="@dimen/dialog_title_size" />
+
+        <TextView
+            android:id="@+id/tv_select_dialog_message"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="ss"
+            android:textColor="@color/item_content_black"
+            android:textSize="@dimen/dialog_message_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/button_stroke_colour" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_select_dialog_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/dialog_left_pre_bg"
+                android:text="@string/mainFragment_logoff_exit"
+                android:layout_weight="1"
+                android:textColor="@color/backgroud_red"
+                android:textSize="@dimen/dialog_below_size" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/button_stroke_colour" />
+
+            <Button
+                android:id="@+id/bt_select_dialog_confirm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/dialog_right_pre_bg"
+                android:text="@string/mainFragment_logoff_relogin"
+                android:textColor="@color/backgroud_red"
+                android:textSize="@dimen/dialog_below_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_login_dialog_close"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/close_dialog" />
+
+</RelativeLayout>

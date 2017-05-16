@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="69dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--<com.jld.torsun.view.RoundImageViewByXfermode-->
+        <!--android:id="@+id/iv_map_guider_item_icon"-->
+        <!--android:layout_width="48dp"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:scaleType="centerInside"-->
+        <!--android:src="@mipmap/default_hear_ico" />-->
+    <RelativeLayout
+        android:id="@+id/rl_item_member_left_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jld.torsun.view.RoundImageViewByXfermode
+            android:id="@+id/iv_map_guider_item_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/default_hear_ico" />
+
+        <ImageView
+            android:id="@+id/iv_map_guider_item_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:src="@mipmap/daoyou_mark"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_map_guider_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="7dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_map_guider_item_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textColor="#97999d"
+        android:textSize="13sp" />
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/item_check_bg"
+
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_message_left_layout"
+        android:layout_width="80dp"
+        android:layout_height="70dp">
+
+        <com.jld.torsun.view.RoundImageViewByXfermode
+            android:id="@+id/iv_item_message_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/default_hear_ico" />
+
+        <TextView
+            android:id="@+id/tv_item_message_num"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignRight="@id/iv_item_message_icon"
+            android:layout_alignTop="@id/iv_item_message_icon"
+            android:layout_marginRight="-3dp"
+            android:layout_marginTop="-3dp"
+            android:background="@drawable/message_num_red_shape_bg"
+            android:gravity="center_horizontal"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_10" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/rl_message_list_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:paddingTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_item_message_tuan_name"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="Name"
+                        android:textColor="@color/item_content_black"
+                        android:textSize="@dimen/sp_19" />
+
+                    <View
+                        android:id="@+id/view_item_message_flag"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:background="@color/graysh" />
+
+                    <TextView
+                        android:id="@+id/tv_item_message_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="title"
+                        android:textColor="@color/graysh"
+                        android:textSize="@dimen/sp_15" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_item_message_time"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="3dp"
+                    android:text="time"
+                    android:textColor="@color/graysh"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_item_message_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="content"
+                android:textColor="@color/graysh"
+                android:textSize="@dimen/sp_15" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignLeft="@id/rl_message_list_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dip"
+            android:background="@color/line_gray" />
+    </RelativeLayout>
+
+</LinearLayout>

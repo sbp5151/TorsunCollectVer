@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_title_height"
+        android:id="@+id/title_trouteam_member_manager"
+        layout="@layout/trouteam_title_view" />
+   <ImageView
+       android:id="@+id/iv_troumanager_gong"
+       android:layout_width="match_parent"
+       android:layout_height="35dp"
+       android:visibility="gone"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/ll_top_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <ProgressBar
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/pb_top_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_top_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loaddata" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_trouteam_member_list"
+        style="@style/style_list_view_base_set"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

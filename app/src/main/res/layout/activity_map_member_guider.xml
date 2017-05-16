@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EDEDED"
+    tools:context="com.jld.torsun.activity.baiduMap.MapMemberGuider">
+
+    <include
+        android:id="@+id/map_guider_title"
+        layout="@layout/trouteam_title_view_map"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_title_height" />
+
+    <GridView
+        android:id="@+id/gv_map_member"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:verticalSpacing="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="5"
+        android:scrollbars="none"/>
+</LinearLayout>

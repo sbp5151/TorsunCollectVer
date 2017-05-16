@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_layout_activity"
+    android:background="#FFFFFF" >
+
+    <View
+        android:background="@drawable/shape_white_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_title_height"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp" >
+        <requestFocus/>
+    </EditText>
+    <LinearLayout
+        android:id="@+id/ll_login_title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="33dp"
+        android:orientation="horizontal" >
+
+        <!-- android:layout_marginTop="13dp" -->
+
+        <ImageView
+            android:id="@+id/iv_login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:background="@mipmap/regies_back"
+            android:clickable="true"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/back_high"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/t_frag_set_dia_btn_can"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_below="@id/ll_login_title_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/login_prompt"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_24" />
+
+        <TextView
+            android:id="@+id/tv_login_country_code"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/padding_right_left"
+            android:layout_marginRight="@dimen/padding_right_left"
+            android:layout_marginTop="31dp"
+            android:clickable="true"
+            android:drawableRight="@mipmap/arrow_right"
+            android:gravity="center_vertical"
+            android:text="@string/regies_code_account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/padding_right_left"
+            android:layout_marginRight="@dimen/padding_right_left"
+            android:layout_marginTop="@dimen/line_top_padding"
+            android:background="@color/line_gray" />
+
+        <!-- 电话 -->
+
+        <com.jld.torsun.view.MyEditText
+            android:id="@+id/et_login_number"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/padding_right_left"
+            android:layout_marginRight="@dimen/padding_right_left"
+            android:layout_marginTop="6dp"
+            android:background="@null"
+            android:hint="@string/login_mobile_hint"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:paddingRight="@dimen/delete_padding_right"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_gray" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/padding_right_left"
+            android:layout_marginRight="@dimen/padding_right_left"
+            android:layout_marginTop="@dimen/line_top_padding"
+            android:background="@color/line_gray" />
+        <!-- 密码 -->
+
+        <com.jld.torsun.view.MyEditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/padding_right_left"
+            android:layout_marginRight="@dimen/padding_right_left"
+            android:layout_marginTop="6dp"
+            android:background="@null"
+            android:drawableRight="@drawable/et_selector_delete"
+            android:hint="@string/login_password_hint"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingRight="@dimen/delete_padding_right"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_gray" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/padding_right_left"
+            android:layout_marginRight="@dimen/padding_right_left"
+            android:layout_marginTop="@dimen/line_top_padding"
+            android:background="@color/line_gray" />
+
+        <Button
+            android:id="@+id/bt_login_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_right_left"
+            android:layout_marginRight="@dimen/padding_right_left"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/shape_red_button_backgroud"
+            android:gravity="center"
+            android:paddingBottom="12dip"
+            android:paddingTop="12dip"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/tv_login_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/padding_right_left"
+            android:layout_marginTop="16dp"
+            android:text="@string/forget_password"
+            android:textColor="@color/backgroud_red"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+</RelativeLayout>

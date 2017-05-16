@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true" >
+
+    <RelativeLayout
+        android:background="@drawable/shape_dialog_white_bg"
+        android:id="@+id/dialog_map_hint_ll"
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dip"
+        android:orientation="vertical"
+        android:paddingTop="45dp"
+        android:paddingRight="20dip"
+        android:paddingLeft="20dip"
+        android:paddingBottom="32dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_map_hint_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/dialog_add_trou_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dialog_title_size" />
+
+        <View
+            android:layout_marginTop="20dp"
+            android:id="@+id/dialog_map_hint_view"
+            android:layout_below="@id/tv_map_hint_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/button_stroke_colour" />
+
+        <TextView
+            android:id="@+id/tv_map_hint_dialog_message"
+            android:layout_below="@id/dialog_map_hint_view"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/map_hint_dialog_message"
+            android:textColor="@color/item_content_black"
+            android:textSize="@dimen/dialog_message_size" />
+
+        <Button
+            android:id="@+id/bt_map_hint_dialog_confirm"
+            android:layout_below="@id/tv_map_hint_dialog_message"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_red_frame_backgroud2"
+            android:text="@string/map_hint_dialog_location"
+            android:textColor="@color/backgroud_red"
+            android:textSize="@dimen/dialog_below_size" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_map_hint_dialog_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/map_hint_dialog_icon" />
+
+</RelativeLayout>

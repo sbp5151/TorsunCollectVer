@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/message_shape_gray_frame_backgroud"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="110dp"
+            android:layout_height="25dp">
+
+            <TextView
+                android:id="@+id/tv_item_guider_second_message_foot_time"
+                android:textSize="@dimen/sp_13"
+                android:gravity="center"
+                android:text="02月03日11:35"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

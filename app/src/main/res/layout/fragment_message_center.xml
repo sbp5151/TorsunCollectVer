@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_frame_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/title_message_center"
+            layout="@layout/title_message_center_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_title_height" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ListView
+                android:id="@+id/message_center_list"
+                style="@style/style_list_view_base_set"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="31dp"
+                android:layout_marginRight="17dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_message_center_edit_share"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="1dp"
+                    android:src="@mipmap/message_share" />
+
+                <ImageView
+                    android:id="@+id/iv_message_center_edit_message"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/message_mes" />
+
+                <ImageView
+                    android:id="@+id/iv_message_center_edit"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/message_edit" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

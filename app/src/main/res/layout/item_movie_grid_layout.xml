@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/niv_item_grid_movie_bg"
+        android:scaleType="centerCrop"
+        android:layout_width="115dp"
+        android:layout_height="115dp" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/niv_item_grid_movie_bg"-->
+        <!--android:src="@mipmap/default_hear_ico"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:layout_width="115dp"-->
+        <!--android:layout_height="115dp" />-->
+
+    <TextView
+        android:id="@+id/tv_item_grid_movie_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:singleLine="true"
+        android:textSize="@dimen/sp_15"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_item_grid_movie_play_num"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="@dimen/sp_13"
+        android:textColor="@color/gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

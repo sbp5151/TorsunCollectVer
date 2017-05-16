@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0666">
+
+    <RelativeLayout
+        android:id="@+id/rl_map_item_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:paddingRight="2dp">
+
+        <ImageView
+            android:id="@+id/iv_map_item_icon_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/map_youke_icon" />
+
+        <com.jld.torsun.view.RoundImageViewByXfermode2
+            android:id="@+id/iv_map_item_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/default_hear_ico" />
+
+        <TextView
+            android:id="@+id/tv_map_item_num"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/iv_map_item_icon"
+            android:layout_marginRight="3dp"
+            android:background="@mipmap/map_youke_num"
+            android:gravity="center"
+            android:paddingTop="1dp"
+            android:text="9"
+            android:textColor="#ffffff"
+            android:textSize="10dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:drawable="@mipmap/a_key_delete" android:state_focused="true"></item>-->
+    <!--<item android:drawable="@mipmap/a_alpha" android:state_focused="false" />-->
+</selector>

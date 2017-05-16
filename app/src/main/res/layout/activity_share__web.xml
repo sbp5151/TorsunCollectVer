@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jld.torsun.activity.messageCenter.Share_Web"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/message_shareWeb_title"
+        layout="@layout/title_message_center_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_title_height" />
+
+    <ProgressBar
+        android:id="@+id/pb_share_web"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <WebView
+        android:id="@+id/wb_share_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

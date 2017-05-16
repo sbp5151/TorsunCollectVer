@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="debug"> </string>
+    <string name="startview_tv">Copyright&#169; 2015 Torsun Trip Ltd. All rights reserved</string>
+    <string name="app_name">Torsun</string>
+    <string name="app_name_show">Torsun </string>
+    <string name="action_settings">Settings</string>
+    <string name="wifi_chat">Free Wifi, HD Voice</string>
+    <string name="login">Log In</string>
+    <string name="sure">Sure</string>
+    <string name="regiest">Sign Up</string>
+    <string name="complaints">Complaints</string>
+    <string name="suggest">Suggestion</string>
+    <string name="edit">Edit</string>
+    <string name="complete">Done</string>
+    <string name="refush">Refresh</string>
+    <string name="call">Call</string>
+    <string name="loaddata"> Loading data</string>
+    <string name="loaddata_un">Loading failed</string>
+    <string name="login_prompt">Login phone number</string>
+    <string name="login_mobile_hint">Enter phone number</string>
+    <string name="login_password_hint">Enter password</string>
+
+    <!-- 注册 -->
+    <string name="nike_hint">Full Name</string>
+    <string name="mobile_hint">Phone Number</string>
+    <string name="password_hint">Password</string>
+    <string name="name_hint">Real Name</string>
+    <string name="get_security_code">Confirmation Code</string>
+    <!--点击确认后，即表示你已同意-->
+    <string name="sure_protocol"> </string>
+    <string name="tucson_protocol">《Torsun Trip User Protocol》</string>
+    <string name="forget_password">Forgot password?</string>
+    <string name="find_password">Retrieve Password</string>
+    <string name="input_regiest_number"> </string>
+    <string name="input_new_password">New Password</string>
+    <string name="sure_new_password">Reconfirm Password</string>
+    <string name="change_account_number">Switch Account</string>
+    <string name="findback_to_change_password">Reset Password</string>
+    <string name="regies_username">Username</string>
+    <string name="regies_hint"> </string>
+    <string name="regies_hint_username">Username</string>
+    <string name="regies_hint_realname">Real name</string>
+    <string name="next_step">Next</string>
+    <string name="regies_have_account">Existing account login</string>
+    <string name="regies_back">Back</string>
+    <string name="regies_code_account">China(+86)</string>
+    <string name="regies_phone_account_1">We protect account security</string>
+    <string name="regies_phone_account_2">and never disclose your phone number to anyone.</string>
+    <string name="regies_code">Confirmation code</string>
+    <string name="regies_code_verify">A code has been sent to the number</string>
+    <string name="regies_finish">Done</string>
+    <string name="regies_second_text1"> </string>
+    <string name="regies_second_text2">s</string>
+
+    <!-- 设置 -->
+
+    <string name="code_country_name">China</string>
+    <string name="nik_change">Full Name</string>
+    <string name="name_change">Real name</string>
+    <string name="change_password">Password</string>
+    <string name="my_name">My name</string>
+    <string name="about_tucson">About</string>
+    <string name="clear_cache">Clear cache</string>
+    <string name="check_update">Updates</string>
+    <string name="feed_back">Feedback</string>
+    <string name="feed_back_text">Help us to improve</string>
+    <string name="logout">Log Out</string>
+    <string name="tucson_trav_protocol">《Torsun Trip User Protocol》</string>
+    <string name="copyright_tucson">Copyright&#169; 2015 Torsun Trip Ltd. All rights reserved.</string>
+    <string name="input_old_password">Old Password</string>
+    <string name="normal_problem">FAQ</string>
+    <string name="select_language">Language</string>
+    <string name="call_us">Contact Us</string>
+    <string name="user_protocol">User protocol</string>
+    <string name="welcome_page">Welcome page</string>
+    <string name="input_you_problem">Please enter your question for feedback</string>
+    <string name="problem_type">Question type (required)</string>
+    <string name="web_title_guider">Tour guide certification</string>
+    <string name="version">Current version V</string>
+    <string name="tv_custom_loding_1">Cleaning cache</string>
+    <string name="tv_custom_loding_2">&#8230;</string>
+    <string name="cache_finish">Done Clear cache</string>
+
+    <!-- 旅游团管理 -->
+    <string name="trou_team_manager">Group Management</string>
+    <string name="add_trou_team_prompt">Click  \"+\" to create a new tour group</string>
+    <string name="input_tourteam_name">Tour Group Name</string>
+    <string name="create_trouteam">Create new Tour Group</string>
+    <string name="name_is_empty">Name cannot be empty</string>
+    <string name="default_tourist_team_name">Torsun tour group</string>
+    <string name="trou_team_delete_text">Del</string>
+    <string name="team_member_pro_text">Data loading……</string>
+
+    <!-- web -->
+    <string name="web_pro_text">Loading……</string>
+
+    <!-- 菜单 -->
+    <string name="menu_battery">Device battery usage</string>
+    <string name="voice_chat">Voice Chat</string>
+    <string name="app_download">Download APP</string>
+    <string name="team_orientation">Team Location</string>
+    <string name="message_center">Information Center</string>
+    <string name="certification_scan_code">Scan QR code</string>
+    <string name="certification">Certify app QR code</string>
+    <string name="vod">VOD</string>
+
+    <!-- 主界面 -->
+    <string name="main_prompt_eh">Welcome to Torsun,I wish you a pleasant journey</string>
+    <string name="main_device_name">Not connected device</string>
+    <string name="main_wave_nooff">ON/OFF</string>
+    <string name="start_no_sim1">No SIM card</string>
+    <string name="start_no_sim2">SIM card is not available</string>
+
+    <!-- 软件下载 -->
+    <string name="app_down_net1">（WiFi download one）</string>
+    <string name="app_down_net2">（WiFi download two）</string>
+    <string name="app_down_outer_net">（Not connected Wifi, please scan this.）</string>
+    <string name="app_down_prompt">Scan QR code, download Torsun APP</string>
+
+    <!-- zxing二维码扫描 -->
+
+    <string name="scan_title_back">Return</string>
+    <string name="scan_title_text">Certify Scan Code</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="scan_text">Align QR code within frame to scan</string>
+    <string name="scan_text2">Certify Scan Code</string>
+
+    <!-- 头像选择 -->
+    <string name="dialog_photo_icon_text">Add an optional profile picture</string>
+    <string name="dialog_photo_btn_text">Take Photo</string>
+    <string name="dialog_photo_btn_picture_text">Choose from Photos</string>
+    <string name="toast_photo_error">Set profile picture failed, please check whether the network connection.</string>
+
+    <!-- optionsmenu -->
+    <string name="opt_menu_about_text">About</string>
+    <string name="opt_menu_feedback_text">Feedback</string>
+    <string name="opt_menu_share_text">Share</string>
+    <string name="opt_menu_changeInput_text">Switching input</string>
+    <string name="opt_menu_helpabout_text">Help/About</string>
+    <string name="opt_menu_exit_text">Log Out</string>
+
+    <!-- Toast以及代码中的 -->
+    <string name="t_main_voice_notifi_ticket">Torsun Trip</string>
+    <string name="t_main_voice_notifi_cont">listening to the broadcast</string>
+    <string name="t_main_voice_device_name_1">Torsun Tour Guide Pal</string>
+    <string name="t_main_voice_device_name_2">Not connected device</string>
+    <string name="t_frag_set_clear_cont">Cache cleared</string>
+    <string name="t_frag_set_update_cont_1">Version update, please restart the software to download the latest version</string>
+    <string name="t_frag_set_update_cont_2">Latest version</string>
+    <string name="t_frag_set_dia_title">Reminder</string>
+    <string name="t_frag_set_dia_msg">Whether logout</string>
+    <string name="t_frag_set_dia_btn_sure">Sure</string>
+    <string name="t_frag_set_dia_btn_can">Cancel</string>
+    <string name="t_frag_set_dia_pro_date">Uploading</string>
+    <string name="t_frag_set_network_err">Network Error</string>
+    <string name="t_frag_set_network_approve">Network errors, please check if the WiFi connect</string>
+    <string name="t_frag_trou_text">Create group first</string>
+    <string name="t_frag_trou_net_err_re">Please ensure that normal Internet access</string>
+    <string name="t_feed_back_text">Enter feedback</string>
+    <string name="t_feed_back_text_type">Please choose a feedback type</string>
+    <string name="t_find_back_pwd_phone">Enter phone number</string>
+    <string name="t_find_back_pwd_text_info">Incomplete information</string>
+    <string name="t_find_back_pwd_code_info">Enter wrong Confirmation code</string>
+    <string name="t_find_back_pwd_get_code_info">Failed to get the Confirmation code</string>
+    <string name="t_find_back_pwd_re_code_info">Reconfirm</string>
+    <string name="t_guide_info">Failed to get the tour guide information</string>
+    <string name="t_login_info">Incomplete information</string>
+    <string name="t_login_suc">Login success</string>
+    <string name="t_nik_change_info_err">>Modify failed! Please make sure the network is normal.</string>
+    <string name="t_nik_change_info_sure">Modified successfully</string>
+    <string name="t_pwd_change_info_2">Enter the new password twice to different</string>
+    <string name="t_pwd_change_info_sure">Modified successfully</string>
+    <string name="t_regiest_code_1">Please get the Confirmation code first</string>
+    <string name="t_regiest_code_2">Confirmation code does not match</string>
+    <string name="t_regiest_info_sure">Sign up succeeded</string>
+    <string name="t_regiest_info_phone">The phone number has existed</string>
+    <string name="t_regiest_get_code_err">Failed to get the Confirmation code</string>
+    <string name="t_reset_pwd_info">Reset password</string>
+    <string name="t_reset_pwd_new_pwd">New password can not be empty</string>
+    <string name="t_reset_pwd_new_pwd_sure">New password success</string>
+    <string name="t_reset_pwd_new_pwd_err_1">Passwords are not consistent</string>
+    <string name="t_reset_pwd_new_pwd_err_2">Retrieve password failed</string>
+    <string name="t_start_dia_title">Update reminder</string>
+    <string name="t_start_dia_msg">Update  Version</string>
+    <string name="t_start_dia_sure">Update now</string>
+    <string name="t_start_dia_can">Update Next time</string>
+    <string name="t_set_photo_no_sdcard">Memory card could not be found to store the photos</string>
+    <!-- 下线通知 -->
+    <string name="mainFragment_logoff_title">Offline notification</string>
+    <string name="mainFragment_logoff_message">Your account is logged on another device. If not operate by yourself, the password may be leaked. Suggest to modify the password.</string>
+    <string name="mainFragment_logoff_exit">Logout</string>
+    <string name="mainFragment_logoff_relogin">Re-login</string>
+    <!-- 退出提示 -->
+    <string name="FragmentSet_logout_title">Reminder</string>
+    <string name="FragmentSet_logout_message">Logout</string>
+    <string name="FragmentSet_logout_cancel">Cancel</string>
+    <string name="FragmentSet_logout_confirm">Sure</string>
+    <string name="FragmentSet_logout_exit">Sure</string>
+    <string name="FragmentSet_logout_relogin">Cancel</string>
+    <!-- 国家编码列表 -->
+    <string name="smssdk_search">Search</string>
+    <string name="getcode">Select national and regional codes</string>
+
+    <!-- 清除缓存提示 -->
+    <string name="FragmentSet_cache_title">Reminder</string>
+    <string name="FragmentSet_cache_message">Clear cache</string>
+    <string name="FragmentSet_cache_cancel">Cancel</string>
+    <string name="FragmentSet_cache_confirm">Sure</string>
+    <string name="team_no_sim">The user can not answer the phone</string>
+    <!--拨点电话-->
+    <string name="TrouTeam_call_message">Calling</string>
+    <string name="TrouTeam_call_confirm">Call</string>
+    <string name="t_set_clean_string">Cleaning&#8230;</string>
+    <string name="t_re_login_string">Login&#8230;</string>
+    <!-- 团队item删除提示-->
+    <string name="TrouManger_delete_dialog_title">Reminder</string>
+    <string name="TrouManger_delete_dialog_message">Cancel the group？</string>
+    <string name="TrouManger_delete_dialog_confirm">Sure</string>
+    <string name="TrouManger_delete_dialog_cancel">Cancel</string>
+
+    <string name="dialog_cache_finish_string">Cache cleared</string>
+
+    <string name="custom_toast">In order to facilitate your management, please create new group when you add new members.</string>
+    <string name="dialog_add_trou">Create new group</string>
+    <string name="dialog_add_trou_title">Warm prompt</string>
+    <!-- 警告提示-->
+    <string name="capture_no_conn">Not connect to the guide device, please try again.</string>
+    <string name="warn_tour_right">Congratulations, you have successfully obtained the permissions of guides management.</string>
+    <string name="warn_add_team1">Welcome</string>
+    <string name="warn_add_team2">to the group.</string>
+    <string name="warn_not_network">3G network is not available, please check your network settings</string>
+    <string name="get_guider_info_error">Network access error,failed to update tour guide information</string>
+    <string name="to_server_failed">Access to the server failed</string>
+    <!-- 百度地图-->
+    <string name="map_location_num">Team location</string>
+    <string name="map_nearby_num">nearby people</string>
+    <string name="map_nearby_distance">Distance information</string>
+    <string name="title_activity_map_member_guider">MapMemberGuider</string>
+    <string name="title_activity_map_member_list">MapMemberList</string>
+    <string name="team_jurisdiction_cancel_prompt0">User</string>
+    <string name="team_jurisdiction_cancel_prompt">Get the guide permission,your permission is invalid now,please re-scan code access permission.</string>
+    <string name="team_jurisdiction_cancel_prompt2">Other user</string>
+    <string name="map_call">Call</string>
+    <string name="map_call_prompt">Only the guide can call.</string>
+    <string name="again_down_home">Return interface</string>
+
+    <!-- 信息中心 -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="message_center_title_content">Information Center</string>
+    <string name="message_center_title_content_new_message">Create information</string>
+    <string name="message_center_title_release">Release</string>
+    <string name="message_center_title_edit">Edit</string>
+    <string name="message_add_title">Title</string>
+    <string name="message_add_describe">Add description</string>
+    <string name="message_add_image">Add pictures</string>
+    <string name="message_add_new_image">Add new photoes</string>
+    <string name="map_hint_1_again">You need creat new tour group to use the group location.</string>
+    <string name="map_hint_1">Creating tour group to use the group location</string>
+    <string name="map_hint_2">Your team has been disbanded.</string>
+    <string name="map_hint_3">You need to connect device wifi to get permission for using group positioning.</string>
+    <string name="title_activity_google_location">GoogleLocation</string>
+    <string name="chekeGooglePlay">Please check whether install Google play.</string>
+    <string name="upload_win">Upload success</string>
+    <string name="upload_fail">Upload failed</string>
+    <string name="my_photo_album">Album</string>
+    <string name="album">Album</string>
+    <string name="message_browser">Browse</string>
+
+    <!-- 视频 -->
+    <string name="movie_play_error_title">Cannot play video</string>
+    <string name="movie_play_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to this device</string>
+    <string name="movie_play_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="movie_play_error_button">OK</string>
+    <string name="movie_title_list_tv">Moive list</string>
+    <string name="movie_list_loading_err">Load Fail! Please click this to load again.</string>
+    <string name="message_add_item_hint">You can only create up to five pieces of information.</string>
+    <string name="message_add_photo_hint">You can only add five pictures.</string>
+    <string name="message_pull_hint">No more history</string>
+    <string name="message_create_quit_hint1">Whether to save a draft？</string>
+    <string name="message_create_quit_hint2">Save</string>
+    <string name="message_create_quit_hint3">Not save</string>
+
+    <string name="map_hint_dialog_message">Click the location icon and gains other member position simultaneously, and refresh automatically.</string>
+    <string name="map_hint_dialog_location">positioning</string>
+    <string name="Message_delete_message">Do you want to delete this message?</string>
+    <string name="delete_ing">deleting&#8230;</string>
+    <string name="delete_fail">delete failed</string>
+    <string name="delete_win">Successful operation</string>
+    <string name="not_delete_system_message">You cannot delete the system information.</string>
+    <string name="msg_system_information">System Information</string>
+    <string name="download_finish">Download finished</string>
+    <string name="update_fail">Download failed</string>
+    <string name="download_ing">Downloading&#8230;</string>
+    <string name="load_hint">Speak by microphone to send voice</string>
+    <string name="create_send_hint">Please create or refresh group list！</string>
+    <string name="t_guide_msg">Failed to get tour guide news</string>
+
+    <string name="dialog_msg_title">Launch push notifications</string>
+    <string name="dialog_msg_content">Every day pushes the interesting news and the travel reference for the team. Before push notifications, please confirm already establishes the team.</string>
+    <string name="dialog_msg_bt">Create information</string>
+
+    <string name="dialog_member_msg_content">Whether join the user who connect the device to this group?</string>
+
+    <string name="network_latency">Network latency</string>
+
+    <string name="to_set_up">To set up</string>
+    <string name="ignore">Ignore</string>
+    <string name="get_gps_hint">Turn on GPS, and it is convenient for guide to find you.</string>
+
+    <string name="single_choice_title">请选择接收团队</string>
+    <string name="again_send_message">重新上传</string>
+    <string name="tour_guide_power_lose">您的导游权限失效</string>
+    <string name="tour_guide">导游</string>
+    <string name="again_tour_guide">请重新获取导游权限</string>
+
+    <string name="dialog_msg">无法获取摄像头权限，请检查是否已经打开摄像头权限。</string>
+    <string name="title_activity_google_maps2">GoogleMaps2</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_main32">Main32Activity</string>
+    <string name="title_activity_google_mpa">GoogleMpa</string>
+    <string name="open_gps">请打开GPS</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="sd_disabled">SD卡不可用，请插入SD卡</string>
+
+    <string name="movie_type">类型</string>
+    <string name="all_pick">全选</string>
+    <string name="no_all_pick">不全选</string>
+    <string name="input_share_content">请输入需要发送的网址</string>
+    <string name="system_abnormal">系统异常</string>
+    <string name="url_error">网址格式错误</string>
+    <string name="share">分享</string>
+    <string name="flow">流量购买</string>
+    <string name="title_activity_wxentry">WXEntryActivity</string>
+    <string name="pay_fail">支付失败</string>
+    <string name="pay_win">支付成功</string>
+    <string name="pay_cancel">支付取消</string>
+
+
+</resources>

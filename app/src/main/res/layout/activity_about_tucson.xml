@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_gray"
+    android:id="@+id/ll_about_layout"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_about_tucson_top"
+        android:background="@color/backgroud_red" >
+
+        <ImageView
+            android:soundEffectsEnabled="false"
+            android:id="@+id/imagev_about_tucson_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="12dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/back" />
+
+
+
+        <ImageView
+            android:id="@+id/iv_about_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:src="@mipmap/about_tucson" />
+
+        <TextView
+            android:id="@+id/tv_about_tucson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/iv_about_icon"
+            android:textSize="@dimen/sp_22" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical"
+
+        android:background="@color/white"
+        >
+
+        <!-- 语言切换 -->
+        <RelativeLayout
+            android:soundEffectsEnabled="false"
+            android:paddingLeft="20dip"
+            android:background="@drawable/item_check_bg"
+            android:id="@+id/rl_select_language"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_item" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_language"
+                android:textSize="@dimen/sp_18"
+                android:textColor="@color/item_content_black"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/arrow_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="12dp"
+                />
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/light_gray"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:soundEffectsEnabled="false"
+            android:paddingLeft="20dip"
+            android:background="@drawable/item_check_bg"
+            android:id="@+id/rl_normal_promble"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_item" >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/normal_problem"
+                android:textSize="@dimen/sp_18"
+                android:textColor="@color/item_content_black"
+                android:layout_centerVertical="true"
+                />
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/arrow_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="12dp"
+                />
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/light_gray"
+                />
+        </RelativeLayout>
+        
+        <!-- 联系我们 -->
+        <RelativeLayout
+            android:soundEffectsEnabled="false"
+            android:paddingLeft="20dip"
+            android:background="@drawable/item_check_bg"
+            android:id="@+id/rl_call_us"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_item" >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call_us"
+                android:textSize="@dimen/sp_18"
+                android:textColor="@color/item_content_black"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/arrow_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="12dp"
+                />
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/light_gray"
+                />
+        </RelativeLayout>
+        
+        <!-- 欢迎页 -->
+        <RelativeLayout
+            android:soundEffectsEnabled="false"
+            android:paddingLeft="20dip"
+            android:background="@drawable/item_check_bg"
+            android:id="@+id/rl_welcome_page"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_item" >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_page"
+                android:textSize="@dimen/sp_18"
+                android:textColor="@color/item_content_black"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/arrow_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="12dp"
+                />
+
+        </RelativeLayout>
+        
+
+        
+    </LinearLayout>
+
+</LinearLayout>

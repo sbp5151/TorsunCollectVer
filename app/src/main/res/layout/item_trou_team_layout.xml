@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="78dp"
+    android:background="@drawable/item_check_bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_trouteam_left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+         >
+        <ImageView
+            android:id="@+id/imagev_trouteam_list_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/trou_team_list_enable" />
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_trouteam_list_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rl_trouteam_left_layout"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_trouteam_item_name"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="泰国吉普带四日游"
+                    android:textColor="@color/item_content_black"
+
+                    android:ellipsize="end"
+                    android:singleLine="true"
+
+                    android:textSize="@dimen/sp_19" />
+
+                <TextView
+                    android:id="@+id/tv_trouteam_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15.09.05"
+                    android:layout_marginRight="14dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+
+            <TextView
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:id="@+id/tv_trouteam_item_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="发就圣诞快乐发大树高大上覆盖的风景"
+                android:textColor="@color/light_gray"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/sp_18" />
+
+        </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/bt_trouteam_item_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/shape_red_button_backgroud"
+        android:text="@string/trou_team_delete_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignLeft="@id/rl_trouteam_list_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dip"
+            android:background="@color/line_gray" />
+
+
+</RelativeLayout>

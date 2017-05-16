@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/msg_padding_left_right"
+    android:paddingRight="@dimen/msg_padding_left_right">
+
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/message_shape_gray_frame_backgroud">
+
+        <TextView
+            android:id="@+id/tv_item_guider_message_list_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="02月03日11:35"
+            android:textColor="@color/message_time_text_gray"
+            android:textSize="@dimen/sp_13" />
+    </RelativeLayout>
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="180dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginTop="18dp"-->
+        <!--card_view:cardCornerRadius="5dp"-->
+        <!--card_view:cardElevation="4dp">-->
+
+    <RelativeLayout
+        android:background="@drawable/message_img_shape_gray_frame_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:layout_marginTop="18dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/niv_item_guider_message_list_face_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_item_guider_message_list_title"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/msg_bg_alpha"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="欧美一周游攻略"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--</android.support.v7.widget.CardView>-->
+
+</LinearLayout>

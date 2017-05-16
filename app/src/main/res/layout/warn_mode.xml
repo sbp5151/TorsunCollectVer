@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#FFF6C7"
+    android:layout_height="35dp">
+
+    <ImageView
+        android:id="@+id/warn_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/warn_icon"/>
+    <TextView
+        android:id="@+id/warn_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/warn_tour_right"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="22dp"
+        android:textSize="@dimen/sp_14"
+        android:textColor="#8D8364"
+        android:layout_toRightOf="@id/warn_icon"/>
+    <ImageView
+        android:id="@+id/warn_delete"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="8dp"
+        android:src="@mipmap/warn_delete"/>
+</RelativeLayout>

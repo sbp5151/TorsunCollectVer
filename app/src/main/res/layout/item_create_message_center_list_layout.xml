@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jld.torsun.modle.MyListView
+            android:id="@+id/lv_message_photo_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_message_add_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/message_default_bg" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_message_photo_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:background="@null"
+        android:hint="@string/message_add_describe"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/graysh"
+        android:textSize="@dimen/sp_18" />
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+
+    <!-- -->
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/iv_item_message_center_list_img"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="center_horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:adjustViewBounds="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:scaleType="fitXY"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:src="@mipmap/message_default_bg" />&ndash;&gt;-->
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_delete_icon"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:visibility="gone"-->
+    <!--android:paddingRight="4dp"-->
+    <!--android:paddingTop="4dp"-->
+    <!--android:src="@mipmap/message_delete_ico"/>-->
+    <!--</RelativeLayout>-->
+
+
+</LinearLayout>

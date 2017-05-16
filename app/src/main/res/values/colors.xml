@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="btn_check">#F1F5F8</color>
+    <color name="btn_un_check">#BFC1C5</color>
+    <color name="dialog_btn_check">#e1e1e1</color>
+    <!-- 背景红 -->
+
+
+
+    <color name="backgroud_red">#F85514</color>
+    <color name="backgroud_red_shape">#Fc6b47</color>
+    <color name="backgroud_ring">#Fc6b47</color>
+    <color name="backgroud_red_gray">#ee410b</color>
+    <color name="backgroud_red_check">#e44101</color>
+    <!-- 背景灰 -->
+    <color name="backgroud_gray">#F1F5F8</color>
+
+    <color name="bg_title_gray">#2e2e2f</color>
+    <color name="btn_backgroud_color">#BFC1C5</color>
+    <!-- 边框灰 -->
+    <color name="frame_gray">#D3D7DA</color>
+    <!-- 下划线灰 -->
+    <color name="line_gray">#D3D7DA</color>
+    <color name="title_line_gray">#e3e3e3</color>
+    <color name="login_line_gray">#c9cbcf</color>
+    <!-- 文字亮灰 -->
+    <color name="light_gray">#DADEE6</color>
+    <color name="button_stroke_colour">#D3D7DA</color>
+    <!-- 文字浅灰 -->
+    <color name="graysh">#B5B7BB</color>
+
+    <color name="menu_round_clolor">#11B5B7BB</color>
+
+    <color name="menu_set">#979b9e</color>
+
+    <!-- 文字灰 -->
+    <color name="gray">#7A7A7A</color>
+    <!-- 引导界面的文字浅灰 -->
+    <color name="gray_view">#B2B2B2</color>
+    <!-- 文字灰 -->
+
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="dialog_backgroud">#00000000</color>
+    <!-- <color name="dialog_backgroud">#707070</color> -->
+    <!-- 浅蓝 -->
+    <color name="bluish">#14a0ff</color>
+
+    <!-- 亮蓝 -->
+    <color name="light_blue">#15a6ff</color>
+ 	<color name="gray_btn">#e1e0df</color>
+    <!-- 红 -->
+    <color name="red">#ff5353</color>
+    <!-- 浅红 -->
+    <color name="light_red">#ff7261</color>
+    <color name="hint_title">#A1A3A7</color>
+
+
+    <!-- 绿 -->
+    <color name="green">#B4D700</color>
+    <color name="yellow">#ffc545</color>
+    <!-- 黑色 -->
+    <color name="item_content_black">#333539</color>
+    <color name="black">#34353A</color>
+    <color name="background_black">#000</color>
+
+    <!-- 二维码扫描 -->
+    <color name="result_text">#ff000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_frame">#ff4EEE94</color>
+    <color name="backgroud">#ffffffff</color>
+    <color name="title_tv_color">#ffffffff</color>
+
+    <!-- zxing二维码扫描 -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="bocop_dialog_bg">#77000000</color>
+
+    <!-- 国家编码列表 -->
+    <drawable name="smssdk_dialog_btn_nor">#00000000</drawable>
+    <drawable name="smssdk_dialog_btn_pre">#ff282a2b</drawable>
+
+    <color name="smssdk_white">#ffffffff</color>
+    <color name="smssdk_gray_press">#fff2f2f2</color>
+    <color name="smssdk_transparent">#00000000</color>
+    <color name="smssdk_lv_tv_color">#ff353535</color>
+    <color name="smssdk_lv_title_color">#ff999999</color>
+    <color name="smssdk_lv_item_selector">#f7fcff</color>
+    <color name="smssdk_lv_item_divider">#ffd9d9da</color>
+    <color name="smssdk_black">#ff000000</color>
+    <color name="smssdk_gray">#ff898989</color>
+
+    <!-- 信息界面字体 -->
+    <!-- 60%的透明度 -->
+    <color name="msg_bg_alpha">#99000000</color>
+    <color name="message_bg_red">#ff6073</color>
+    <color name="message_time_text_gray">#97999d</color>
+    <color name="message_shape_gray">#E3E3E3</color>
+    <color name="message_content_bg">#F1F1F1</color>
+    <color name="message_browser_text">#B5B7BB</color>
+</resources>

@@ -1,0 +1,21 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:shareInterpolator="true" >
+
+    <scale
+        android:repeatCount="infinite"
+        android:duration="700"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromXScale="0.8"
+        android:fromYScale="0.8"
+        android:toXScale="1.0"
+        android:toYScale="1.0" />
+
+    <!--<alpha-->
+        <!--android:repeatCount="infinite"-->
+        <!--android:startOffset="350"-->
+        <!--android:duration="150"-->
+        <!--android:fromAlpha="1.0"-->
+        <!--android:toAlpha="0.1" />-->
+</set>

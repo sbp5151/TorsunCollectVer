@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_gray"
+    android:id="@+id/ll_change_nik_layout"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_title_height"
+        android:id="@+id/title_change_nik"
+        layout="@layout/title_view" />
+
+    <com.jld.torsun.view.MyEditText
+        android:id="@+id/et_change_nik"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_centerVertical="true"
+        android:drawableRight="@drawable/et_selector_delete"
+        android:layout_marginLeft="@dimen/margin_left_layout"
+        android:layout_marginRight="@dimen/margin_left_layout"
+        android:layout_marginTop="25dip"
+        android:background="@drawable/shape_gray_frame_bg"
+        android:imeOptions="actionDone"
+        android:paddingBottom="@dimen/item_pad_top"
+        android:paddingLeft="20dip"
+        android:paddingRight="@dimen/delete_padding_right"
+        android:paddingTop="@dimen/item_pad_top"
+        android:singleLine="true"
+        android:hint="@string/regies_hint_realname"
+        android:textColorHint="@color/graysh"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp" >
+        <requestFocus/>
+    </EditText>
+
+</LinearLayout>

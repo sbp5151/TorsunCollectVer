@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.jld.torsun">
+    <!-- 友盟推送 -->
+    <uses-sdk android:minSdkVersion="4" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 语音 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- zxing二维码扫描权限 -->
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <!-- JPush -->
+    <permission
+        android:name="com.jld.torsun.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.jld.torsun.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 接收短信权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!-- 百度地图权限 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- shareSDK分享 -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoTitleBar">
+        <activity
+            android:name=".activity.loginAndRegies.StartActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 二维码扫描 -->
+        <activity android:name=".barcode.MipcaActivityCapture" />
+
+        <!-- 注册 -->
+        <activity android:name=".activity.RegiestActivity" />
+        <activity android:name=".activity.loginAndRegies.RegiesUser" />
+        <activity android:name=".activity.loginAndRegies.RegiesPhone" />
+        <activity android:name=".activity.loginAndRegies.RegiesCode" />
+        <activity android:name=".activity.countryCode.CountryPageActivity" />
+
+        <!-- 找回密码 -->
+        <activity android:name=".activity.FindBackPassWordActivity" />
+
+        <!-- 登录 -->
+        <activity android:name=".activity.loginAndRegies.LoginActivity" />
+
+        <!-- 二次登录 -->
+        <activity android:name=".activity.loginAndRegies.RepeatLoginActivity" />
+
+        <!-- 重设密码 -->
+        <activity android:name=".activity.ResetPasswordActivity" />
+
+        <!--
+        设置
+        <activity android:name="com.jld.torsun.activity.SetActivity" >
+        </activity>
+        -->
+        <!-- 昵称修改 -->
+        <activity android:name=".activity.NikChangeActivity" />
+        <!-- 关于途胜 -->
+        <activity android:name=".activity.AboutTucsonActivity" />
+        <!-- 修改密码 -->
+        <activity android:name=".activity.PasswordChangeActivity" />
+        <!-- 意见反馈 -->
+        <activity android:name=".activity.FeedBackActivity" />
+
+        <!--
+        旅游团添加
+        <activity android:name="com.jld.torsun.activity.TourTeamAddAcvitity" >
+        </activity>
+        -->
+        <!-- 旅游团编辑 -->
+        <activity android:name=".activity.tours.TrouTeamEdtiActivity" />
+
+        <!-- 旅游团预览 -->
+        <activity android:name=".activity.tours.PreTrouTeamMemberActivity" />
+
+        <!-- 旅游团管理 -->
+        <activity android:name=".activity.tours.TrouTeamMemberManagerActivity" />
+
+        <!--
+        旅游团列表
+        <activity android:name="com.jld.torsun.activity.TrouTeamListActivity" >
+        </activity>
+        -->
+        <activity
+            android:name=".activity.MainFragment"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <!--
+        主界面
+        <activity android:name="com.jld.torsun.activity.MainActivity" >
+        </activity>
+        <activity android:name="com.jld.torsun.activity.AppDownloadActivity" >
+        </activity>
+        -->
+        <activity android:name=".activity.GuiderInfoActivity2" />
+        <!--
+        <activity
+            android:name="com.jld.torsun.barcode.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+
+        </activity>
+        -->
+        <activity android:name=".activity.ChosePhoneActivity" />
+        <activity android:name=".activity.WebActivity" />
+        <activity android:name=".activity.WebActivity1" />
+        <activity android:name=".activity.messageCenter.SystemMessageWebActivity" />
+
+        <service android:name=".service.MulcastService" />
+        <service android:name=".service.AudioPlayService" />
+        <!--
+        网络变化接收者
+        <receiver android:name="com.jld.torsun.HeadsetPlugReceiver" >
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.HEADSET_PLUG"
+                    android:enabled="true" />
+            </intent-filter>
+        </receiver>
+        -->
+        <!-- 网络变化接收者 -->
+        <receiver android:name=".service.netChangeReceiver">
+            <intent-filter>
+
+                <!-- 待机广播 -->
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <!-- 解锁广播 -->
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <!-- 网络变化广播 -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <!-- &lt;!&ndash; 打电话广播 &ndash;&gt; -->
+                <!-- <action android:name="android.intent.action.NEW_OUTGOING_CALL" /> -->
+                <!-- &lt;!&ndash; 电话状态广播 &ndash;&gt; -->
+                <!-- <action android:name="android.intent.action.PHONE_STATE" /> -->
+            </intent-filter>
+        </receiver>
+        <!-- com.jld.torsun.activity.StartActivity -->
+        <!-- com.jld.torsun.OtherTextActivity -->
+
+
+        <!-- JPush -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.jld.torsun" />
+            </intent-filter>
+        </service>
+
+        <!-- Required -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category android:name="com.jld.torsun" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.jld.torsun" />
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined. 用户自定义的广播接收器 -->
+        <receiver
+            android:name=".service.JPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.jld.torsun" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+        <!-- Required. For publish channel feature -->
+        <!-- JPUSH_CHANNEL 是为了方便开发者统计APK分发渠道。 -->
+        <!-- 例如: -->
+        <!-- 发到 Google Play 的APK可以设置为 google-play; -->
+        <!-- 发到其他市场的 APK 可以设置为 xxx-market。 -->
+        <!-- 目前这个渠道统计功能的报表还未开放。 -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="e70d8b41eb838e21e5bd8b5b" />
+        <!-- WDBwg2kitBYUTSogbHCDSHG7  单工的key -->
+        <!-- D3LmuXBGZTszBAU36WmmTPcx  我的key -->
+        <!-- 正式版key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="vIE9yHdgCM5j4aXkWg1863Hw" />
+        <!-- debug版key -->
+        <!-- <meta-data -->
+        <!-- android:name="com.baidu.lbsapi.API_KEY" -->
+        <!-- android:value="WDBwg2kitBYUTSogbHCDSHG7" /> -->
+        <!-- debug版 -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="AIzaSyAApRMI7NvLOQpalVdLjy_acMdWH0ZYCCg" /> -->
+        <!-- 正式版 -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDmb-Zvvct_V0Wufoa5nlfJpxL6krbZ9sQ" />
+
+        <!-- 友盟 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="572d552de0f55aaccd004ad0" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Torsun" />
+
+        <activity android:name=".activity.SelectLanguageActivity" />
+
+        <receiver android:name=".service.BatteryInfoReceiver" />
+
+        <activity android:name=".activity.baiduMap.MapLocation" />
+        <activity
+            android:name=".activity.baiduMap.MapMemberGuider"
+            android:label="@string/title_activity_map_member_guider" />
+        <activity
+            android:name=".activity.baiduMap.MapMemberList"
+            android:label="@string/title_activity_map_member_list" />
+        <activity
+            android:name=".activity.messageCenter.CreateNewMessageActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.GoogleMap.GoogleLocation"
+            android:label="@string/title_activity_google_location" />
+        <activity android:name=".activity.messageCenter.GuiderMessageActivity" />
+        <activity android:name=".activity.messageCenter.GuiderSecondMessageActivity" />
+        <activity android:name=".activity.messageCenter.MessageContentActivity" />
+        <activity
+            android:name=".activity.mediaPlayer.PlayerActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/VideoTheme" />
+        <activity
+            android:name=".activity.mediaPlayer.VodActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/VideoTheme" />
+        <activity
+            android:name=".activity.mediaPlayer.VodActivity2"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".activity.mediaPlayer.VodActivity3"
+            android:screenOrientation="sensorLandscape" />
+        <activity android:name=".activity.GoogleMap.GoogleMapMemberList" />
+        <activity android:name="zhy.imageloader.MainActivity" />
+
+        <service
+            android:name=".activity.baiduMap.SendLocationService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".activity.GoogleMap.GoogleGetLocationService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".activity.messageCenter.SendMessageService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.VUPService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".activity.messageCenter.SingleChoiceActivity" />
+
+        <receiver
+            android:name=".service.PhoneReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- <activity -->
+        <!-- android:name=".activity.GoogleMapActivity.Main3Activity" -->
+        <!-- android:label="@string/title_activity_main3"/> -->
+
+
+        <!-- shareSDK -->
+        <!-- QQ -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="cn.sharesdk.demo.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".activity.messageCenter.Share_Web" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:label="@string/title_activity_wxentry"/>
+    </application>
+</manifest>

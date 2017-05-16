@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:baselineAligned="false"
+    android:keepScreenOn="true">
+
+
+    <SurfaceView
+        android:id="@+id/vod_sfv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/vod_progressbar"
+        style="@style/mProgress_circle"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/movie_play_top_view"
+            layout="@layout/my_media_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/vod_my_controller_view"
+            layout="@layout/my_media_controller" />
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/il_vod_ad_view"
+        layout="@layout/vod_ad_view" />
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_about"
+        android:orderInCategory="3"
+        android:showAsAction="always|withText"
+        android:title="@string/opt_menu_about_text"/>
+    <item
+        android:id="@+id/menu_feedback"
+        android:orderInCategory="2"
+        android:showAsAction="always|withText"
+        android:title="@string/opt_menu_feedback_text"/>
+    <item
+        android:id="@+id/menu_share"
+        android:orderInCategory="1"
+        android:showAsAction="always|withText|"
+        android:title="@string/opt_menu_share_text"/>
+    
+<!-- 计算器菜单开始 -->    
+    <item
+        android:id="@+id/changeInput"
+        android:title="@string/opt_menu_changeInput_text"/>
+    <item
+        android:id="@+id/helpabout"
+        android:title="@string/opt_menu_helpabout_text"/>
+    <item
+        android:id="@+id/exit"
+        android:title="@string/opt_menu_exit_text"/>
+<!-- 计算器菜单结束 -->   
+</menu>

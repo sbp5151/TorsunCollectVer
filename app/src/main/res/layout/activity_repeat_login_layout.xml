@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/repeat_login_layout"
+    android:orientation="vertical" >
+
+    <View
+        android:background="@drawable/shape_white_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_title_height"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp" >
+        <requestFocus/>
+    </EditText>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/repeat_login_back"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="27dip"
+        android:padding="8dp"
+        android:src="@mipmap/back_login_or_regies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_login_regiest_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="26dip"
+        android:layout_marginTop="34dip"
+        android:text="@string/regiest"
+        android:textColor="@color/backgroud_red"
+        android:textSize="@dimen/sp_18" />
+
+    <LinearLayout
+        android:layout_marginTop="60dip"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:id="@+id/rl_login_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.jld.torsun.view.RoundImageViewByXfermode
+            android:id="@+id/imageview_login_head_icon"
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:src="@mipmap/default_hear_ico_re" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_login_head"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_left_layout"
+        android:paddingRight="@dimen/margin_left_layout" >
+
+        <!-- 填写手机号码 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_line_height_item"
+            android:layout_marginTop="@dimen/margin_widget_v_small"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.jld.torsun.view.MyEditText
+                android:layout_weight="1"
+                android:id="@+id/et_relogin_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/mobile_hint"
+                android:imeOptions="actionNext"
+                android:numeric="integer"
+                android:paddingRight="@dimen/delete_padding_right"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/graysh"
+                android:textSize="@dimen/sp_18" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/login_line_gray" />
+        </LinearLayout>
+
+        <!-- 填写密码 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_line_height_item"
+            android:layout_marginTop="@dimen/margin_widget_v_small"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.jld.torsun.view.MyEditText
+                android:layout_weight="1"
+                android:inputType="textPassword"
+                android:id="@+id/et_relogin_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:drawableRight="@drawable/et_selector_delete"
+                android:gravity="center_vertical"
+                android:hint="@string/password_hint"
+                android:imeOptions="actionDone"
+                android:paddingRight="@dimen/delete_padding_right"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/graysh"
+                android:textSize="@dimen/sp_18" >
+            </com.jld.torsun.view.MyEditText>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/login_line_gray" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_repeat_login_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dip"
+            android:background="@drawable/shape_red_button_backgroud"
+            android:gravity="center"
+            android:paddingBottom="12dip"
+            android:paddingTop="12dip"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/tv_login_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="16dp"
+            android:text="@string/forget_password"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_change_acuuout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dip"
+        android:text="@string/change_account_number"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/sp_18" />
+
+</RelativeLayout>

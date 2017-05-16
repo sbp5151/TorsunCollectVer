@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jld.torsun.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/menu_bg"
+    android:scrollbars="none"
+    zhy:rightPadding="100dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/layout_menu"
+            layout="@layout/layout_menu" />
+
+        <RelativeLayout
+            android:id="@+id/rl_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.jld.torsun.SlidingMenu>

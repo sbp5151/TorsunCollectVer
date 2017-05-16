@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="90dp"
+    android:background="@mipmap/bg_custom_toast"
+    android:paddingBottom="20dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="途胜旅行提醒您"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/backgroud_red"
+        android:textSize="19sp" />
+
+    <TextView
+        android:textSize="18sp"
+        android:lineSpacingExtra="15dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/tv_custom_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#fff"/>
+
+</LinearLayout>

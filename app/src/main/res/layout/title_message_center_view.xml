@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_white_bg">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/black"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/title_message_cent_flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tv_title_message_center_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/title_message_cent_flag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/top_title_tv_height"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:singleLine="true"
+        android:text="@string/message_center_title_content_new_message"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_bar_size" />
+
+    <ImageButton
+        android:id="@+id/iv_title_message_center_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/title_message_cent_flag"
+        android:layout_marginTop="@dimen/top_title_back_height"
+        android:background="@null"
+        android:paddingLeft="12dp"
+        android:paddingRight="8dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/regies_back" />
+
+    <LinearLayout
+        android:id="@+id/ll_right_view"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="18dp"
+        android:layout_alignTop="@id/title_message_cent_flag"
+        android:layout_marginTop="@dimen/top_title_back_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title_message_center_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/message_center_title_release"
+            android:visibility="visible"
+            android:textColor="@drawable/message_add_item_selector"
+            android:textSize="@dimen/sp_18" />
+
+        <ImageButton
+            android:id="@+id/iv_title_message_center_edit"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@null"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/title_line_gray" />
+
+</RelativeLayout>

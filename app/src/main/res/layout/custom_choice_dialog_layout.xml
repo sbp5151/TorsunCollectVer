@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_dialog_white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@drawable/shape_dialog_red_bg"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/custom_choice_dialog_icon"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/custom_choice_dialog_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/custom_choice_dialog_listView"
+        android:layout_weight="1"
+        style="@style/style_list_view_base_set"
+        android:choiceMode="singleChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+
+    </ListView>
+    <LinearLayout
+        android:background="@drawable/dialog_bottom_shape_pre_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/custom_choice_dialog_negativeButton"
+            android:background="@drawable/dialog_bottom_shape_pre_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

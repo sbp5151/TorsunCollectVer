@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_black">
+
+    <View
+        android:id="@+id/trouteam_title_cent_flag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tv_map_nearby_title_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/trouteam_title_cent_flag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/top_title_tv_height"
+        android:text="@string/map_nearby_num"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_bar_size" />
+
+
+    <ImageView
+        android:id="@+id/iv_map_nearby_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/trouteam_title_cent_flag"
+        android:layout_marginTop="@dimen/top_title_back_height"
+        android:paddingLeft="12dp"
+        android:paddingRight="8dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/back" />
+    <ImageView
+        android:id="@+id/iv_map_nearby_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/trouteam_title_cent_flag"
+        android:layout_marginTop="@dimen/top_title_back_height"
+        android:paddingLeft="12dp"
+        android:paddingRight="8dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/map_title_icon_1"
+         />
+</RelativeLayout>

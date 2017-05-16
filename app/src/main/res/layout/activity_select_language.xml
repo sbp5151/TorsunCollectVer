@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroud_gray"
+    android:id="@+id/select_language_ll"
+    tools:context="com.jld.torsun.activity.SelectLanguageActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_title_height"
+        android:id="@+id/select_language_title"
+        layout="@layout/trouteam_title_view"/>
+
+    <ListView
+
+        android:choiceMode="singleChoice"
+        android:id="@+id/select_language_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

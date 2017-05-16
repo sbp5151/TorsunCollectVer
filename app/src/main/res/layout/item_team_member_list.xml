@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_paren_layout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/item_check_bg"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_member_left_layout"
+        android:layout_width="63dp"
+        android:layout_height="match_parent">
+
+        <com.jld.torsun.view.RoundImageViewByXfermode2
+            android:id="@+id/iv_team_member_list_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/default_hear_ico_re" />
+
+        <ImageView
+
+            android:id="@+id/image_team_member_isonline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/online"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:id="@+id/rl_trouteam_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/rl_item_member_left_layout">
+
+        <TextView
+            android:id="@+id/tv_team_member_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="nik"
+            android:textColor="@color/item_content_black"
+            android:textSize="@dimen/sp_19" />
+        <TextView
+            android:id="@+id/tv_team_member_item_name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_team_member_item_name"
+            android:layout_toRightOf="@+id/tv_team_member_item_name"
+            android:singleLine="true"
+            android:text="/name"
+            android:textColor="@color/backgroud_red"
+            android:textSize="@dimen/sp_19" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22dp"
+            android:id="@+id/imagev_team_member_call"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/call" />
+        <TextView
+            android:id="@+id/tv_team_member_item_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="123451"
+            android:layout_below="@+id/tv_team_member_item_name"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/graysh"
+            android:textSize="@dimen/sp_16" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignLeft="@id/rl_trouteam_list_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dip"
+        android:background="@color/light_gray" />
+
+</RelativeLayout>

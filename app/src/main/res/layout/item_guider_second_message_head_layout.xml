@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_marginTop="26dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_item_guider_second_message_head_icon_view"
+            android:orientation="vertical"
+            android:layout_width="52dp"
+            android:gravity="center_vertical"
+            android:layout_height="52dp">
+
+            <com.jld.torsun.view.RoundImageViewByXfermode
+                android:id="@+id/rivbxf_item_guider_second_message_head_icon"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/default_hear_ico"/>
+        </LinearLayout>
+
+        <TextView
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="1"
+
+            android:id="@+id/tv_item_guider_second_message_head_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/ll_item_guider_second_message_head_icon_view"
+            android:layout_alignTop="@id/ll_item_guider_second_message_head_icon_view"
+            android:text="阿斯蒂芬"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_item_guider_second_message_head_name"
+            android:textColor="@color/message_browser_text"
+            android:layout_alignBottom="@id/ll_item_guider_second_message_head_icon_view"
+            android:layout_alignStart="@id/tv_item_guider_second_message_head_title"
+            android:layout_marginBottom="6dp"
+            android:text="途胜旅行"
+            android:textSize="@dimen/sp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_alignBottom="@id/tv_item_guider_second_message_head_name"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_item_guider_second_message_head_browser_num"
+                android:text="10"
+                android:textColor="@color/message_browser_text"
+                android:textSize="@dimen/sp_11"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/message_browser"
+                android:textColor="@color/message_browser_text"
+                android:textSize="@dimen/sp_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="23dp"
+        android:background="#C9CBCF"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <TextView
+        android:id="@+id/tv_item_guider_second_message_below"
+        android:layout_marginTop="26dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

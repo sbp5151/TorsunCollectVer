@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_title_height"
+        android:id="@+id/web_title"
+        layout="@layout/trouteam_title_view" />
+
+    <RelativeLayout
+        android:id="@+id/rl_message_web"
+        android:layout_width="match_parent"
+        android:focusableInTouchMode="false"
+        android:layout_height="match_parent" >
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             />
+
+        <ProgressBar
+            android:id="@+id/web_progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <ProgressBar
+            android:id="@+id/web_progressBar2"
+            style="@style/publicloadingProgressStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/web_progressBar2"
+            android:layout_centerHorizontal="true"
+            android:text="@string/web_pro_text"
+            android:textColor="#000"
+            android:textSize="14dip" />
+    </RelativeLayout>
+
+</LinearLayout>

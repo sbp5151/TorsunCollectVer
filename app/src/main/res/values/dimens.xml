@@ -1,0 +1,163 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 主菜单中子菜单上下左右相距的距离 -->
+    <dimen name="menu_child_margin_top">26dp</dimen>
+    <dimen name="menu_child_margin_left">71dp</dimen>
+
+
+    <dimen name="size_default_height">50dp</dimen>
+    <!-- 引导页 -->
+    <dimen name="size_load_logo">200dip</dimen>
+    <!-- 超大正方形按钮的大小 -->
+    <dimen name="size_super_big_image_button">46dip</dimen>
+    <!-- 大正方形按钮的大小 -->
+    <dimen name="size_big_image_button">36dip</dimen>
+    <dimen name="size_back_image_button">25dip</dimen>
+
+    <!-- 中等正方形按钮的大小 -->
+    <dimen name="size_mille_image_button">22dip</dimen>
+    <!-- 小正方形按钮的大小 -->
+    <dimen name="size_small_image_button">16dip</dimen>
+    <!-- 注册添加头像圆形 -->
+    <dimen name="size_main_icon">116dip</dimen>
+    <dimen name="size_head_icon">100dip</dimen>
+    <dimen name="size_head_icon_2">114dip</dimen>
+    <dimen name="size_head_guide_icon">80dip</dimen>
+    <dimen name="size_main_icon_guide">124dip</dimen>
+    <dimen name="size_head_icon_1">70dip</dimen>
+    <!-- 大item的高度 -->
+    <dimen name="height_big_item">60dip</dimen>
+    <!-- item的高度 -->
+    <dimen name="login_line_height_item">48dip</dimen>
+    <dimen name="height_item">56dip</dimen>
+    <dimen name="guider_icon_height">28dp</dimen>
+    <dimen name="guider_item_iv_marginBottom">9dp</dimen>
+    <dimen name="guider_item_tv_marginBottom">7dp</dimen>
+    <!-- title高度 -->
+    <dimen name="height_title">69dip</dimen>
+    <!-- item的上下留白 -->
+    <dimen name="item_pad_top">10dip</dimen>
+    <!-- 布局的左右间隙 -->
+    <dimen name="margin_left_layout">30dip</dimen>
+    <!-- 主页面按钮图片与文字距离-->
+    <dimen name="main_text_image_padding">12dip</dimen>
+
+    <!-- 闪屏顶部间隔 -->
+    <dimen name="margin_top_start_pager">100dip</dimen>
+
+    <!-- 注册顶部红色 -->
+    <dimen name="height_regiest_red">90dip</dimen>
+    <dimen name="size_add_imageview">20dip</dimen>
+    <dimen name="sp_32">32sp</dimen>
+    <dimen name="sp_29">29sp</dimen>
+
+    <dimen name="sp_45">45sp</dimen>
+    <!-- 24sp -->
+    <dimen name="sp_24">24sp</dimen>
+    <dimen name="sp_25">25sp</dimen>
+    <dimen name="sp_26">26sp</dimen>
+
+    <!-- 22sp -->
+    <dimen name="sp_22">22sp</dimen>
+    <dimen name="sp_23">23sp</dimen>
+    <dimen name="sp_21">21sp</dimen>
+
+    <!-- 20sp -->
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_19">19sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+
+    <!-- 17sp -->
+    <dimen name="sp_17">17sp</dimen>
+
+    <!-- 16sp -->
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+
+    <!-- 14sp -->
+    <dimen name="sp_14">14sp</dimen>
+
+    <!-- 13sp -->
+    <dimen name="sp_13">13sp</dimen>
+    <!-- 12sp -->
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_11">11sp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <!--title_bra文字大小-->
+    <!--状态栏高度-->
+    <dimen name="top_title_height">72dp</dimen>
+    <dimen name="top_title_tv_height">-2.5dp</dimen>
+    <dimen name="top_title_back_height">-1dp</dimen>
+
+    <dimen name="title_bar_size">19sp</dimen>
+    <dimen name="set_item_size">17sp</dimen>
+    <dimen name="set_item_size_left">12sp</dimen>
+    <dimen name="set_item_back_right">12dip</dimen>
+    <dimen name="set_item_icon_mg_right">21dip</dimen>
+    <!-- dialog-->
+    <dimen name="dialog_message_size">18sp</dimen>
+    <dimen name="dialog_title_size">22sp</dimen>
+    <dimen name="dialog_below_size">18sp</dimen>
+    <dimen name="dialog_title_padding_top">10dp</dimen>
+    <dimen name="dialog_message_padding_button">18dp</dimen>
+    <dimen name="dialog_message_padding_left_right">5dp</dimen>
+    <dimen name="dialog_height">172dp</dimen>
+    <dimen name="dialog_width">267dp</dimen>
+    <dimen name="dialog_check_height">50dp</dimen>
+    <!-- 注册-->
+    <dimen name="register_title_size">26dp</dimen>
+    <dimen name="register_et_mg_top">5dp</dimen>
+    <dimen name="register_et_height">45dp</dimen>
+    <!-- 一键 清空间和右边间隔 -->
+    <dimen name="delete_padding_right">12dp</dimen>
+    <!-- 下划线与上面的间隔 -->
+    <dimen name="line_top_padding">0dip</dimen>
+    <dimen name="msg_second_item_line_height">15dp</dimen>
+    <dimen name="msg_second_item_line_height_2">14dp</dimen>
+    <!-- 返回键高度 -->
+    <dimen name="back_high">30dip</dimen>
+    <!-- 控件和左右间隔 -->
+    <dimen name="padding_right_left">30dip</dimen>
+    <dimen name="msg_padding_left_right">18dp</dimen>
+    <!-- 控件间隔 -->
+    <dimen name="margin_widget_v_small">10dip</dimen>
+    <dimen name="margin_widget_v_big">30dip</dimen>
+
+    <!-- 登录头像 -->
+    <dimen name="size_login_head_icon">75dip</dimen>
+
+    <!-- 关于途胜顶部红色高度 -->
+
+    <dimen name="height_about_tucson_top">244dip</dimen>
+
+    <!-- 旅游团列表icon的大小 -->
+    <dimen name="size_trouteam_list_icon">48dip</dimen>
+
+    <!-- 菜单中icon的大小 -->
+    <dimen name="size_menu_icon">30dip</dimen>
+
+    <!-- 主页面红色高度 -->
+    <dimen name="height_main_red_top">137dip</dimen>
+
+    <!-- 语音图片的大小 -->
+    <dimen name="size_voice_image">135dip</dimen>
+    <dimen name="size_voice_image_1">191dip</dimen>
+
+    <!-- 二维码的大小 -->
+    <dimen name="size_erweima">150dip</dimen>
+    <dimen name="margin_buttom_certification">80dip</dimen>
+    <dimen name="margin_top_download">16dip</dimen>
+
+    <!-- 菜单顶部距离 -->
+    <dimen name="menu_margin_top">98dip</dimen>
+    <dimen name="menu_margin_left">106dip</dimen>
+    <dimen name="heigth_phone_dialog">200dip</dimen>
+    <dimen name="width_phone_dialog">260dip</dimen>
+    <dimen name="height_text_phone_dialog">65dip</dimen>
+    <dimen name="width_get_code">120dip</dimen>
+
+</resources>

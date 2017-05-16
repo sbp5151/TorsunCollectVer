@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.jld.torsun.activity.messageCenter.SingleChoiceActivity">
+
+    <include
+        android:id="@+id/single_choice_title"
+        layout="@layout/title_message_center_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_title_height"/>
+
+    <ListView
+        android:id="@+id/single_choice_list"
+        style="@style/style_list_view_base_set"
+        android:choiceMode="singleChoice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>

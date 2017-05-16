@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/imagev_start_pager_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dip"
+        android:src="@mipmap/center_viewpage2" />
+
+    <ImageView
+        android:id="@+id/imagev_start_pager_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_start_layout_version"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dip"
+        android:src="@mipmap/bottom_viewpage2" />
+
+    <TextView
+        android:id="@+id/tv_start_layout_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dip"
+        android:text="@string/startview_tv"
+        android:textColor="@color/gray_view"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
